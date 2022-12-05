@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Consuming web service</string>
+    <string name="bar_name">Student Manager</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="actions">Actions</string>
+    <string name="new_student">New student</string>
+    <string name="get_students">See students</string>
+    <string name="search_students">Search students</string>
+    <string name="delete_student">Delete a student</string>
+
+</resources>

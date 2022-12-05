@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subtitulo_uno"
+            android:title="@string/actions">
+            <menu>
+                <item
+                    android:id="@+id/newStudent"
+                    android:icon="@drawable/ic_baseline_person_add_24"
+                    android:title="@string/new_student"/>
+                <item
+                    android:id="@+id/getStudents"
+                    android:icon="@drawable/ic_baseline_groups_24"
+                    android:title="@string/get_students"/>
+                <item
+                    android:id="@+id/searchStudent"
+                    android:icon="@drawable/ic_baseline_person_search_24"
+                    android:title="@string/search_students"/>
+                <item
+                    android:id="@+id/deleteStudent"
+                    android:icon="@drawable/ic_baseline_delete_24"
+                    android:title="@string/delete_student"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>
