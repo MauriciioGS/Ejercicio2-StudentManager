@@ -9,4 +9,38 @@
     <string name="search_students">Search students</string>
     <string name="delete_student">Delete a student</string>
 
+    <!--    New Student Fragment    -->
+    <string name="new_student_title">Ingresa a continuación los datos del nuevo estudiante</string>
+    <string name="new_student_account">Cuenta</string>
+    <string name="new_student_name">Nombre</string>
+    <string name="new_student_age">Edad</string>
+    <string name="new_student_subjects">Materias</string>
+    <string name="new_student_add">Añadir</string>
+    <string name="item_subject1">Lógica</string>
+    <string name="item_subject2">Fundamentos de programación</string>
+    <string name="item_subject3">Cálculo 1</string>
+    <string name="item_subject4">Cálculo 2</string>
+    <string name="item_subject5">Cálculo 3</string>
+    <string name="item_subject6">Física</string>
+    <string name="item_subject7">Química</string>
+    <string name="item_subject8">Estadística</string>
+    <string name="item_subject9">Probabilidad</string>
+    <string name="item_subject10">Administración</string>
+
+    <string name="txt_no_subjects">Por favor, selecciona al menos una materia</string>
+    <string name="txt_no_fields">Por favor, ingresa todos los campos</string>
+    <string name="txt_no_account">Se requiere una cuenta</string>
+    <string name="txt_no_name">Se requiere un nombre</string>
+    <string name="txt_no_age">Se requiere una edad</string>
+
+    <!--    Search Student Fragment    -->
+    <string name="search_student_title">Ingresa a continuación el id del estudiante que deseas buscar</string>
+    <string name="student_id">ID</string>
+    <string name="student_id_error">Por favor, ingresa un id</string>
+    <string name="student_id_error2">No existe</string>
+    <string name="student_id_error3">No existe un alumno con id ${1}</string>
+
+    <!--    Delete Student Fragment    -->
+    <string name="delete_student_title">Ingresa a continuación el id del estudiante que deseas borrar</string>
+
 </resources>

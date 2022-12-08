@@ -17,10 +17,6 @@ import mx.mauriciogs.consumingwebservice.view.fragments.SearchStudentsFragment
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var newStudentFragment: NewStudentFragment
-    private lateinit var getStudentsFragment: GetStudentsFragment
-    private lateinit var searchStudentsFragment: SearchStudentsFragment
-    private lateinit var deleteStudentFragment: DeleteStudentFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,10 +43,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun setInitialFragment() {
         setToolbarTitle(getString(R.string.new_student))
-        newStudentFragment = NewStudentFragment()
         supportFragmentManager
             .beginTransaction()
-            .add(binding.frameLayout.id, newStudentFragment)
+            .add(binding.layoutMainContent.mainContent.id, NewStudentFragment())
             .commit()
     }
 
@@ -67,22 +62,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when(item.itemId) {
             R.id.newStudent -> {
                 setToolbarTitle(getString(R.string.new_student))
-                transaction.replace(binding.frameLayout.id, newStudentFragment).commit()
+                transaction.replace(R.id.main_content, NewStudentFragment()).commit()
             }
             R.id.getStudents -> {
                 setToolbarTitle(getString(R.string.get_students))
-                getStudentsFragment = GetStudentsFragment()
-                transaction.replace(binding.frameLayout.id, getStudentsFragment).commit()
+                transaction.replace(R.id.main_content, GetStudentsFragment()).commit()
             }
             R.id.searchStudent -> {
                 setToolbarTitle(getString(R.string.search_students))
-                searchStudentsFragment = SearchStudentsFragment()
-                transaction.replace(binding.frameLayout.id, searchStudentsFragment).commit()
+                transaction.replace(R.id.main_content, SearchStudentsFragment()).commit()
             }
             R.id.deleteStudent -> {
                 setToolbarTitle(getString(R.string.delete_student))
-                deleteStudentFragment = DeleteStudentFragment()
-                transaction.replace(binding.frameLayout.id, deleteStudentFragment).commit()
+                transaction.replace(R.id.main_content, DeleteStudentFragment()).commit()
             }
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
